@@ -10,6 +10,6 @@ class TestController extends Controller
     
     public function index(){
 
-        return 'Yeeee';
+        return 'Yeeee_Yeenima';
     }
 }
