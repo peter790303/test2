@@ -1,0 +1,134 @@
+@charset "utf-8";
+body{
+	margin:0px;
+	overflow-y:hidden;
+}
+.brand-topbar {
+	position:fixed;
+	background-color:#444;
+	width:100%;
+	min-height:50px;
+	margin-bottom:30px;	
+	top:0;
+	font-family: Arial, sans-serif;
+	color: #fff;
+	font-size: 12px;
+	font-weight: bold;
+	text-align:center;
+}
+.clearfix {clear:both;}
+.formats-center {
+	display:inline-block;
+	text-align:center;
+	margin:auto;
+	font-family:inherit;
+	color:inherit;
+	clear:left;
+	padding: 18px 0;
+	cursor:default;
+}
+.navbar-brand {
+	float: left;
+	padding: 15px;
+	font-size: 18px;
+	line-height: 20px;
+	width: 70px;
+	color: #fff;
+	font-weight: bold;
+}
+.hvr-icon-wobble-horizontal {
+	float: right;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	position: relative;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	padding: 18px 26px;
+	cursor: pointer;
+	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-font-smoothing: antialiased;
+	font-family:inherit;
+	color:#ccc;
+	
+	-webkit-transition: background-color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+}
+.hvr-icon-wobble-horizontal:hover, .hvr-icon-wobble-horizontal:active, .hvr-icon-wobble-horizontal:focus {
+	background-color:#4b4b4b;
+}
+.hvr-icon-wobble-horizontal:after {
+    content:url("data:image/svg+xml;charset=UTF-8,%3Csvg%20fill%3D%22%23a5cd39%22%20viewBox%3D%220%200%2018%2018%22%20weight%3D%2212px%22%20height%3D%2212px%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M10%206L8.59%207.41%2013.17%2012l-4.58%204.59L10%2018l6-6z%22%2F%3E%0A%20%20%20%20%3Cpath%20d%3D%22M0%200h24v24H0z%22%20fill%3D%22none%22%2F%3E%0A%3C%2Fsvg%3E");
+		display:inline-block;
+    position: relative;
+		width:12px;
+		height:12px;
+    padding-left: 5px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#frame_con{
+	height: inherit;
+	width: inherit;
+}
+#phone_size {
+	display:block;
+	position:relative;
+	height: 640px;
+	width: 360px;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	overflow:hidden;
+}
+.frame_container{
+	min-height:540px;
+	min-width:360px;
+}
+
+/* ===== virtual device ===== */
+
+.device-virtual {
+	position:relative;
+	background-color:#282828;
+	width: 360px;
+	padding: 30px 15px;
+	margin: 0px auto;
+	text-align:center;
+	
+	-webkit-border-radius: 36px;
+	border-radius: 36px;
+	-webkit-transform:scale(.7);
+	transform:scale(.7);
+}
+.device-circle-1 {background-color:#444;width: 80px;height:10px;-webkit-border-radius: 50px;border-radius: 50px;margin:0 auto 20px auto;}
+.device-circle-2 {background-color:#444;width: 100px;height:30px;-webkit-border-radius: 50px;border-radius: 50px;margin:30px auto 0 auto;}
+.grey {background-color:#999;}
+.grey .device-circle-1, .grey .device-circle-2 {background-color:#ccc;}
+
+/* QR Code */
+#qrcode {
+	background-color:#fff;
+	position:fixed;
+	display:inline-block;
+	right:10px;
+	bottom:10px;
+	font-family: Arial, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	color:white;
+	text-align:center;
+	border: 1px solid #88a92f;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	overflow:hidden;
+}
+#qrcode:before {
+	content:'Scan the QR Code and bring me to mobile site.';
+	background-color:#a5cd39;
+	display:block;
+	width:150px;
+	padding:8px 0;
+}
