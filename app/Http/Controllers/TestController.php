@@ -9,7 +9,7 @@ class TestController extends Controller
     //
     
     public function index(){
-
-        return 'Yeeee_Yeenimaasfdjaodjff';
+        $time = date("Y-m-d H:i:s");   
+        return '現在時間'.$time;
     }
 }
