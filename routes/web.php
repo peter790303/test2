@@ -28,8 +28,9 @@ Route::get('/report/{startTime}&{endTime}','ReportController@data');
 
 Route::post('/addOrder','OrderController@postValue');
 
-Route::get('/indexTest','TestController@index')->middleware('test');
-
+// Route::get('/indexTest','TestController@index')->middleware('test');
+Route::get('/indexTest','TestController@index');
+Route::get('/indexTest/{aaa}/{bbb}','TestController@index');
 // Route::get('/home', 'HomeController@index')->name('home');
 // Route::get('/logout', 'LoginController@logout');
 // Auth::routes();
